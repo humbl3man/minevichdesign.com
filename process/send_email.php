@@ -4,7 +4,7 @@
 	$response = "";
 
 	if ($_SERVER['REQUEST_METHOD'] === "POST"){
-	
+
 		$name = htmlspecialchars($_POST['name']);
 		$email = htmlspecialchars($_POST['email']);
 		$message = htmlspecialchars($_POST['message']);
@@ -38,7 +38,7 @@ $mail = new PHPMailer;
 // $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 // $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->From = 'minevich@minevichdesign.com';
+$mail->From = 'info@minevichdesign.com';
 $mail->FromName = 'Work inquiry';
 $mail->addAddress($email, $name);     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
