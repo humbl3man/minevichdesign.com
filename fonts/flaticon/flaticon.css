@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+font-style: normal;
+}.flaticon-codepen:before {
+	content: "\e000";
+}
+.flaticon-plus:before {
+	content: "\e001";
+}
+.flaticon-chevron-bottom:before {
+	content: "\e002";
+}
+.flaticon-close-o:before {
+	content: "\e003";
+}
+.flaticon-close:before {
+	content: "\e004";
+}
+.flaticon-github:before {
+	content: "\e005";
+}
+.flaticon-google-plus:before {
+	content: "\e006";
+}
+.flaticon-linkedin:before {
+	content: "\e007";
+}
+.flaticon-menu:before {
+	content: "\e008";
+}
+.flaticon-scroll:before {
+	content: "\e009";
+}
+.flaticon-chevron-right:before {
+	content: "\e00a";
+}
+.flaticon-laptop:before {
+	content: "\e00b";
+}
+.flaticon-outgoing:before {
+	content: "\e00c";
+}
+.flaticon-pictures:before {
+	content: "\e00d";
+}
+.flaticon-screen:before {
+	content: "\e00e";
+}
+.flaticon-twitter:before {
+	content: "\e00f";
+}

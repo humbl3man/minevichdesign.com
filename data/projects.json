@@ -1,0 +1,35 @@
+[
+	{
+		"project_id" 			: "wcp",
+	  	"project_title"			: "Work Creation Program",
+		"project_image" 		: "../img/portfolio/wcp/wcp.jpg",
+		"project_work_as" 		: "Website",
+		"project_type" 			: "UI Design | Front End",
+		"project_url" 			: "http://www.workcreationprogram.com/",
+		"project_description" 	: "Work Creation Program Incorporated approached me to redesign their outdated website. Content was great and definitely aligned with company's vision. Yet, the design of the website was old.",
+		"project_features" 		: ["Semantic HTML","Cross-Browser CSS & JS", "Responsive", "Native HTML5 video", "Bootstrap Grid", "Sticky Header"],
+	  	"project_technologies"  : ["HTML","CSS","JavaScript","Bootstrap"]
+	},
+  	{
+	  "project_id" 				: "shoecloud",
+	  "project_title"			: "Shoe Cloud App",
+	  "project_image" 			: "../img/portfolio/shoecloud/shoecloud.jpg",
+	  "project_work_as" 		: "Website",
+	  "project_type" 			: "Design | Front End",
+	  "project_url" 			: "http://minevichdesign.com/clients/shoecloud/index.php",
+	  "project_description" 	: "Shoe Cloud asked me to create a website to promote their ShoeCloud app.",
+	  "project_features" 		: ["Clean Minimalistic Design","100% Custom Made", "Semantic HTML", "Responsive", "Cross-browser CSS & JS", "Fluid transitions and animations"],
+	  "project_technologies"  	: ["HTML","CSS","JavaScript","Bootstrap","PHP"]
+  	},
+  	{
+  	  "project_id" 				: "alekon",
+	  "project_title"			: "Alekon Construction Co.",
+	  "project_image" 			: "../img/portfolio/alekon/alekon.jpg",
+	  "project_work_as" 		: "Website",
+	  "project_type" 			: "Design | Front End",
+	  "project_url" 			: "http://minevichdesign.com/clients/alekon/",
+	  "project_description" 	: "Alekon Construction is a mid-size construction company operating in Eastern part of Russia. I have been asked to build a brand new website for them.",
+	  "project_features" 		: ["Clean design","100% Custom Made", "Semantic HTML", "Responsive", "Cross-browser CSS & JS", "Modular SASS"],
+	  "project_technologies"  	: ["HTML","JavaScript","SASS","PHP"]
+  	}
+]

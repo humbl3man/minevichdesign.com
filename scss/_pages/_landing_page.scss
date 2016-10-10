@@ -1,0 +1,170 @@
+body.landing-page {
+    padding: 0;
+}
+
+.landing-page {
+    #jumbotron {
+        color: $color--zircon;
+    }
+}
+
+.landing-page .jmb--title {
+    color: $color--zircon;
+}
+
+.flexbox .landing-page #jumbotron {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
+#jumbotron {
+    // fallback
+    background-color: $color--east-bay;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgba(255, 255, 255, .67);
+    @include screen-desktop {
+        background-image: linear-gradient(rgba($color--east-bay, .44) 25%, transparent), url(../img/hero.jpg);
+    }
+    @include screen-tablet {
+        background-image: linear-gradient(rgba($color--east-bay, .44) 25%, transparent), url(../img/hero-tablet.jpg);
+    }
+    @include screen-mobile {
+        background-image: linear-gradient(rgba($color--east-bay, .44) 25%, transparent), url(../img/hero-phone.jpg);
+    }
+    @include screen-mobile-landscape {
+      padding-top: rem(85px);
+    }
+
+    .hero-img{
+        @include screen-mobile {
+            display: none;
+        }
+    }
+    .cta {
+        margin: 5px;
+        background-color: $color--curious-blue;
+        border: none;
+        color: #fff;
+        &:hover {
+            background-color: $color--east-bay;
+        }
+    }
+
+    .lead {
+        @include screen-mobile {
+            font-size: em(16px);
+        }
+    }
+    .jmb--title {
+        white-space: nowrap;
+        color: $white;
+        @include screen-mobile {
+            font-size: em(28px);
+        }
+        @include screen-tablet {
+            font-size: em(42px);
+        }
+        @include screen-desktop {
+            font-size: em(72px);
+        }
+    }
+    .jmb--subtitle {
+        color: darken($white, 5%);
+        display: inline-block;
+        margin-top: em(12px);
+        line-height: $line-height;
+        white-space: nowrap;
+        background-color: #fff;
+        border-radius: 3px;
+        padding: 5px 10px;
+        box-shadow: 0 3px 0 rgba(0,0,0,.1);
+        .typed-script,
+        .typed-cursor {
+            color: lighten($color--east-bay, 10%);
+        }
+        @include screen-mobile {
+            font-size: em(24px);
+        }
+        @include screen-tablet {
+            font-size: em(28px);
+        }
+        @include screen-desktop {
+            font-size: em(36px);
+        }
+        font-weight: $font-weight--light;
+    }
+    #scroll-down {
+        position: absolute;
+        bottom: em(10px);
+        line-height: 1;
+        text-align: center;
+        padding: 0;
+        color: darken($color--zircon, 10);
+        background-color: transparent;
+        -webkit-transition: .2s;
+                transition: .2s;
+        font-size: em(50px);
+        width: 50px;
+        display: inline;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            color: $color--coral;
+            -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                    transform: scale(1.2);
+        }
+        @include screen-mobile {
+            font-size: em(42px);
+        }
+        @include screen-tablet {
+            font-size: em(48px);
+        }
+    }
+}
+
+.is-animated {
+    -webkit-animation: scale-up .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            animation: scale-up .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    @-webkit-keyframes scale-up {
+        from {
+            opacity: 0;
+            -webkit-transform: scale(.5);
+                    transform: scale(.5);
+        }
+        to {
+            opacity: 1;
+            transfrom: scale(1);
+        }
+    }
+    @keyframes scale-up {
+        from {
+            opacity: 0;
+            -webkit-transform: scale(.5);
+                    transform: scale(.5);
+        }
+        to {
+            opacity: 1;
+            transfrom: scale(1);
+        }
+    }
+}

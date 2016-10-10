@@ -1,0 +1,38 @@
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.f-left{
+	float: left;
+}
+.f-right{
+	float: right;
+}
+
+.color--blue{
+  color: $color--curious-blue;
+}
+
+.color--orange{
+  color: $color--coral;
+}
+
+.color--green{
+  color: $color--jungle-green;
+}
+
+.color--red{
+  color: $color--radical-red;
+}
+
+
+ul.list-inline{
+  li{
+	display: inline-block;
+	margin-right: 5px;
+	&:last-child{
+	  margin-right: 0;
+	}
+  }
+}

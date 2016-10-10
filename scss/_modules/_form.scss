@@ -1,0 +1,72 @@
+.frm{
+    @include span-columns(6 of 12);  
+    @include shift(3);
+    
+	.frm-heading{
+		color: $color--east-bay;
+        border-bottom: 1px solid #eee;
+        margin-bottom: em(10px);
+        padding-bottom: em(10px);
+	}
+
+	.frm-submit-btn{
+		margin: $base--font-size 0 !important;
+        font-size: inherit;
+        padding: em(8px) em(22px);
+        min-width: 220px;
+        border: 1px solid transparent;
+        color: $white;
+        background-color: $color--curious-blue;
+        background: linear-gradient($color--curious-blue, lighten($color--curious-blue, 5%));
+        cursor: pointer;
+        display: block;
+        border-radius: 3px;
+        font-family: $font--primary;
+	}
+}
+
+.form-control{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    display: inline-block;
+	width: 100%;
+	padding: em(8px) em(7px);
+	margin: em(8px) 0;
+	font-family: $font--primary;
+	font-size: inherit;
+	color: $color--zircon;
+    border: 1px solid lighten($color--east-bay, 45%);
+    border-radius: 3px;
+	transition: .2s;
+    
+	&:focus{
+		border-color: lighten($color--east-bay, 10%); 
+        background-color: transparent;
+        color: lighten($color--east-bay, 10%);
+	}
+}
+
+.success-msg {
+    border: 1px solid $color--east-bay;
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 30px;
+}
+
+
+@include screen-mobile{
+	#contact-form{
+		@include span-columns(12 of 12);
+		@include shift(0);
+	}
+	#name-input,
+	#email-input{
+		margin-bottom: em(9px);
+		margin-right: 0;
+		float: none;
+		width: 100%;
+	}
+}

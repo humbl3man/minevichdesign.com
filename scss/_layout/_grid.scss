@@ -1,0 +1,52 @@
+$offset : 0;
+
+.row{
+	@include row;
+}
+.col-full{
+	@include span-columns(12 of 12);
+}
+.col-half{
+	@include span-columns(6 of 12);
+}
+
+.col-1{
+  @include span-columns(1 of 12);
+}
+.col-2{
+  @include span-columns(2 of 12);
+}
+.col-3{
+  @include span-columns(3 of 12);
+}
+.col-4{
+	@include span-columns(4 of 12);
+}
+.col-5{
+@include span-columns(5 of 12);
+}
+.col-7{
+  @include span-columns(7 of 12);
+}
+.col-8{
+  @include span-columns(8 of 12);
+}
+.col-9{
+  @include span-columns(9 of 12);
+}
+.col-10{
+  @include span-columns(10 of 12);
+}
+.col-11{
+  @include span-columns(11 of 12);
+}
+
+.shift-right-6{
+	@include shift(6);
+}
+
+@include screen-mobile{
+	[class^="col-"]{
+		@include span-columns(12 of 12);
+	}
+}

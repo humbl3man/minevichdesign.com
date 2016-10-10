@@ -1,0 +1,199 @@
+.landing-page #main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //background-color: transparent;
+    box-shadow: none!important;
+}
+
+#main-nav {
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba($color--east-bay, 0.15);
+    /*background-color: darken($color--east-bay, 10%);*/
+    #main-nav-logo {
+        a {
+            color: lighten($color--curious-blue, 40%);
+            padding: 10px 0 22px 10px 10px;
+            &,
+            span {
+                -webkit-transition: 2s ease-in-out;
+                transition: 2s ease-in-out;
+            }
+            span {
+                color: lighten($color--curious-blue, 10%);
+            }
+            &:hover,
+            &:hover span {
+                color: $color--curious-blue;
+            }
+        }
+        font-family: $font--secondary;
+        /*width: 35%;*/
+        display: inline-block;
+        text-align: left;
+        font-size: em(20px);
+        text-transform: uppercase;
+        height: rem(65px);
+        line-height: rem(65px);
+    }
+    #main-nav-navbar {
+        @include screen-mobile {
+            display: none;
+        }
+        @include screen-tablet {
+            display: none;
+        }
+        @include screen-desktop {
+            display: block !important;
+            width: 65%;
+            float: right;
+            text-align: right;
+        }
+    }
+}
+
+#main-nav .nav-items {
+    > li {
+        display: inline-block;
+        margin: 0 em(6px);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    a {
+        display: block;
+        text-transform: uppercase;
+        font-family: $font--primary;
+        font-size: em(14px);
+        color: lighten($color--east-bay, 40%);
+        -webkit-transition: color .12s;
+        transition: color .12s, box-shadow .25s;
+        padding: em(8px) 0;
+        &.active,
+        &:hover {
+            color: $color--curious-blue;
+            box-shadow: inset 0 -3px 0 $color--curious-blue;
+        }
+    }
+}
+
+#menu {
+    position: fixed;
+    right: -325px;
+    top: 0;
+    height: 100%;
+    background: darken($color--east-bay, 10%);
+    width: 300px;
+    text-align: center;
+    z-index: 10000;
+    a {
+        position: relative;
+        z-index: 1;
+        color: $white;
+        padding: 20px 10px;
+        display: block;
+        text-transform: uppercase;
+        font-family: $font--secondary;
+        font-weight: 400;
+        font-size: em(20px);
+        @include screen-mobile {
+            font-size: em(14px);
+        }
+        @include screen-tablet {
+            font-size: em(15px);
+        }
+        transition: color .2s;
+        overflow: hidden;
+        &:first-child {
+            margin-top: 15px;
+        }
+        &:hover {
+            color: $white;
+        }
+        &:hover::before {
+            right: -10%;
+            transition: .45s;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            right: 200%;
+            top: 0;
+            width: 200%;
+            height: 100%;
+            background-color: $color--curious-blue;
+            transition: .35s;
+            z-index: -1;
+            transform: skewX(25deg);
+        }
+    }
+    #menu-close {
+        padding-top: 0;
+        font-size: em(28px);
+        font-weight: $font-weight--light;
+        opacity: .75;
+        &:hover {
+            color: $color--curious-blue;
+            opacity: 1;
+        }
+        &::before {
+            display: none;
+        }
+    }
+}
+
+#menu-toggle {
+    cursor: pointer;
+    position: absolute;
+    width: rem(65px);
+    height: rem(65px);
+    right: 0;
+    top: 0;
+    font-size: 0.93333em;
+    margin: 0;
+    padding: 10px;
+    background: lighten($color--east-bay, 1%);
+    color: #fff;
+    @include screen-desktop {
+        display: none;
+    }
+}
+
+.footer-nav {
+    float: left;
+    .foot-nav-item {
+        color: lighten($color--east-bay, 10%);
+        display: inline-block;
+        font-family: $font--primary;
+        margin-bottom: em(8px);
+        margin-right: em(6px);
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:after {
+            content: "/";
+            margin-left: 5px;
+        }
+        &:last-child:after {
+            display: none;
+        }
+    }
+    .footer-link {
+        color: inherit;
+    }
+}
+
+.social {
+    float: right;
+    .social-link {
+        font-size: em(24px);
+    }
+}
+
+@include screen-mobile {
+    .social,
+    .footer-nav {
+        float: none;
+    }
+}

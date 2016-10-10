@@ -1,0 +1,31 @@
+//config 
+@import "_config/index";
+
+// vendor styles
+@import "_vendor/_bourbon/_bourbon"; // bourbon
+@import "_vendor/_neat/_neat"; // neat
+
+//mixins
+@import "_mixins/index";
+
+// base styles
+@import "_base/index";
+
+// media queries
+@import "_media/index";
+
+// layout styles
+@import "_layout/index";
+
+// module styles
+@import "_modules/index";
+
+// states
+@import "_states/index";
+
+// page specific styles
+@import "_pages/_landing_page";
+@import "_pages/_porfolio";
+
+// etc vendors
+@import "_vendor/_typed"; // animated typing 

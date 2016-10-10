@@ -1,0 +1,53 @@
+.rel{
+	position: relative;
+}
+
+.callout{
+	background-color: #fff;
+	box-shadow: -5px 0 24px $color--zircon;
+	border: 1px solid $color--zircon;
+	padding: em(15px);
+	margin: 0 0 em(25px);
+	border-radius: em(2px);
+}
+
+span.wrp{
+	font-size: em(14px);
+}
+
+.wrp{
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: em(8px);
+	@include screen-mobile{
+		margin-bottom: em(10px);
+	}
+
+	padding: em(10px) em(13px);
+  	border: 1px solid;
+	border-radius: em(4px);
+	//box-shadow: 0 3px 3px $color--shadow;
+	&--dark{
+		border-color: $color--east-bay;
+		color: $color--east-bay;
+	}
+	&--gray{
+		border-color: $color--zircon;
+		color: $color--zircon;
+	}
+	&--blue{
+		border-color: $color--curious-blue;
+		color: $color--curious-blue;
+	}
+	&--red{
+		border-color: $color--radical-red;
+		color: $color--radical-red;
+	}	
+	&--orange{
+		border-color: $color--coral;
+		color: $color--coral;
+	}
+	&:last-child{
+		margin-right: 0;
+	}	
+}

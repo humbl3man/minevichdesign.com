@@ -1,0 +1,14 @@
+.profile-illustration {
+    position: relative;
+    top: em(5px);
+    transition: .2s ease-in-out;
+    box-shadow: 0 3px 4px hsla(219, 31%, 49%, 0.31);
+    margin-right: em(12px);
+    margin-bottom: em(32px);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    @include screen-mobile {
+        display: none;
+    }
+}

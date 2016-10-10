@@ -1,0 +1,20 @@
+$white					: #FFF;
+$black					: #222;
+$dark-gray              : #B2B2B2;
+$light-gray             : #EAEAEA;
+
+$color--curious-blue	: #278ED5;
+$color--east-bay		: #3B3E40;
+$color--coral			: #FE8059;
+$color--zircon			: #EFEFF0;
+$color--radical-red		: #ED3636;
+$color--jungle-green	: #29B25D;
+
+$color--shadow			: lighten($color--east-bay, 82%);
+$color--heading			: $color--east-bay;
+$color--text			: lighten($color--east-bay, 27%);
+$color--link			: $color--curious-blue;
+
+$color--error			: $color--radical-red;
+$color--success			: $color--jungle-green;
+$color--disabled        : $light-gray;

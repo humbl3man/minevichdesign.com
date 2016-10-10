@@ -1,0 +1,51 @@
+.btn{
+	padding: em(5px) em(22px);
+	margin: 1em 0;
+	border-radius: 2px;
+	text-align: center;
+	font-size: inherit;
+	font-family: $font--secondary;
+	font-weight: $font-weight--bold;
+	text-transform: uppercase;
+	display: inline-block;
+	cursor: pointer;
+	transition: .25s;
+	margin-right: em(5px);
+    border: 1px solid;
+
+	&--block{
+		display: block;
+		width: 100%;
+	}
+
+  	&--bg{
+	  padding: em(7px) em(26px);
+	  font-size: em(18px);
+	}
+	&--sm{
+		padding: em(5px) em(10px);
+		font-size: em(13px);
+	}
+
+	&--blue{
+		color: $color--curious-blue;
+		border-color: $color--curious-blue;
+	}
+	&--red{
+		color: $color--radical-red;
+		border-color: $color--radical-red;
+	}
+	&--ocean-blue{
+		border-color: lighten($color--east-bay,56);
+		color: lighten($color--east-bay,56);
+	}
+	&--orange{
+		color: $color--coral;
+		border-color: $color--coral;
+	}
+	&--green{
+		color: $color--jungle-green;
+		border-color: $color--jungle-green;
+	}
+
+}

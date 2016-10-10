@@ -1,0 +1,4 @@
+// Convert any value to em
+@function em($target,$base:$base--font-size){
+	@return $target / $base * 1em;
+}

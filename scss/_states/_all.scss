@@ -1,0 +1,69 @@
+.loading{
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 99999;
+    .spinner{
+        position: absolute!important;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+
+
+#menu-toggle.is-toggled{
+	box-shadow: none;
+}
+
+div.error{
+	display: none;
+	padding: em(5px);
+	background-color: $color--radical-red;
+	color: $white;
+}
+
+.error,
+.success{
+	font-family: $font--primary;
+	font-size: em(14px);
+}
+
+.error{
+	color: $color--radical-red;
+}
+
+.success{
+	color: $color--jungle-green;
+}
+
+input.error,
+textarea.error,
+input.success,
+textarea.success{
+	border: 1px solid;
+	font-size: em(14px);
+}
+
+input.error,
+textarea.error{
+	border-color : $color--radical-red;
+}
+
+input.success,
+textarea.success{
+	border-color : $color--jungle-green;
+}
+
+.invalid {
+    margin-top: 10px;
+    color: $color--radical-red;
+}
