@@ -7,12 +7,13 @@
 	<meta itemscope itemtype="https://schema.org/Person" itemprop="name" content="Konstantin Minevich">
 	<meta itemscope itemtype="https://schema.org/Person" itemprop="description" content="Konstantin is a web designer and front end developer with several years of experience. He has been professionally designing and building websites since 2013. He has a strong knowledge of client side programming (JavaScript) and a proven expertise in HTML5 and CSS3." >
 	<title>MinevichDesign | <?php echo $page_title; ?></title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <link rel="icon" type="image/png" href="<?php echo BASE_URL; ?>favicon.png">
-		<link rel="canonical" href="<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
-	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oswald:400,700%7CDosis:400,300,700' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <link rel="icon" type="image/png" href="<?php echo BASE_URL; ?>favicon.png">
+	<link rel="canonical" href="<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700%7CDosis:400,300,700" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo BASE_URL; ?>css/three-quarters-spinner.css" type="text/css">
-	<link rel='stylesheet' href='<?php echo BASE_URL ?>fonts/flaticon/flaticon.css' type='text/css'>
+	<link rel="stylesheet" href="<?php echo BASE_URL ?>fonts/flaticon/flaticon.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo BASE_URL; ?>css/main.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
 	</script>
@@ -28,10 +29,10 @@
 	    <div class="three-quarters-loader spinner"></div>
 	</div>
 
-	<div id="menu">
+	<div id="menu" class="animated slideInDown">
 		<a href aria-hidden="false" id="menu-close"><span class="flaticon-close"></span></a>
 		<a href="<?php echo BASE_URL; ?>">Home</a>
-        <a href="<?php echo BASE_URL; ?>about/">About</a>
+    <a href="<?php echo BASE_URL; ?>about/">About</a>
 		<a href="<?php echo BASE_URL; ?>services/">Services</a>
 		<a href="<?php echo BASE_URL; ?>portfolio/">Portfolio</a>
 		<a href="<?php echo BASE_URL; ?>contact/">Contact</a>

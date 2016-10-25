@@ -7,10 +7,7 @@
 		minifyCSS = require('gulp-minify-css'),
 		rename = require('gulp-rename');
 
-
 	var jsfiles = [
-		'./js/vendor/jquery.min.js',
-		'./js/vendor/jquery.validate.min.js',
 		'./js/vendor/typed/typed.min.js',
 		'./js/form_validate.js',
 		'./js/landing_page.js',

@@ -19,6 +19,8 @@
 <?php } ?>
 <a class="hidden" href="<?php echo BASE_URL;?>/sitemap.html">Sitemap</a>
 <!-- Site JavasScript -->
+<script src="<?php echo BASE_URL; ?>js/vendor/jquery.min.js"></script>
+<script src="<?php echo BASE_URL; ?>js/vendor/jquery.validate.js"></script>
 <script src="<?php echo BASE_URL; ?>js/app.min.js"></script>
 </body>
 </html>
